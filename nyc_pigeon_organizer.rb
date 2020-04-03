@@ -18,5 +18,11 @@ def nyc_pigeon_organizer(pigeon_data)
           name_array.each do |name2|
             if name2 == name &&  attribute2 == attribute
               value_array << value.to_s
-              
+            end
+          end
+        end
+      end
+    end
+    pigeon_list
+  end 
 end
