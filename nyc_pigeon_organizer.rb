@@ -17,6 +17,6 @@ def nyc_pigeon_organizer(pigeon_data)
         value_hash.each do |value, name_array|
           name_array.each do |name2|
             if name2 == name &&  attribute2 == attribute
-              name_array << value.to_s
+              value_array << value.to_s
               
 end
