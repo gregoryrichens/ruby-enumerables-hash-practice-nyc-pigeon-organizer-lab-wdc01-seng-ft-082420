@@ -1,3 +1,15 @@
-def nyc_pigeon_organizer(data)
-  # write your code here!
+def nyc_pigeon_organizer(pigeon_data)
+  pigeon_list = {}
+  pigeon_data.each do |(attribute, value_hash)|
+    value_hash.each do |value, name_array| 
+      name_array.each do |name|
+        if !pigeon_list[name]
+          pigeon_list[name] = {}
+        end
+        #do I need to include this in if block?
+        pigeon_list[name][attribute] = []
+      end
+    end
+  end
+  
 end
